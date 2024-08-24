@@ -1,0 +1,63 @@
+section {
+  display: flex;
+  background-color: var(--backgr-1);
+  gap: 20px;
+  //   width: 100%;
+  
+  aside {
+    background-color: var(--backgr-1);
+    // background-color: antiquewhite;
+    box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.263);
+    position: sticky;
+    top: 120px;
+    width: 350px;
+    height: calc(100vh - 120px);
+
+    .profiledetails {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      // background-color: red;
+      align-items: center;
+      height: 200px;
+      justify-content: center;
+      gap: 20px;
+      text-transform: capitalize;
+
+      .profileicon {
+        img {
+          height: 100px;
+          width: 100px;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+      }
+
+      .icon {
+        font-size: 100px;
+      }
+    }
+    .adminfunctions {
+      display: flex;
+      flex-direction: column;
+      margin: 3px;
+      // gap: 5px;
+      a {
+        text-decoration: none;
+        color: black;
+
+        .navlink {
+          // background-color: blue;
+          padding: 7px;
+
+          &:hover {
+            background-color: rgba(128, 128, 128, 0.33);
+          }
+        }
+      }
+    }
+  }
+  main{
+    flex: 1;
+  }
+}

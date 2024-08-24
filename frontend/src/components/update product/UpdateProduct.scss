@@ -1,0 +1,135 @@
+.UpdateProduct {
+  //  background-color: red;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .addProduct {
+    background-color: white;
+    width: 50%;
+    height: 800px;
+    overflow-y: scroll;
+
+    .head {
+      background-color: white;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+    }
+    form {
+      padding: 30px;
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+      // height: 100%;
+      // overflow-y: scroll;
+
+      input,
+      select {
+        padding: 10px;
+        background-color: rgba(211, 211, 211, 0.565);
+        border: 1px solid gray;
+        outline: none;
+      }
+      .textarea {
+        height: 100px;
+        resize: none;
+        outline: none;
+      }
+      .imageUploadlabel {
+        .images {
+          background-color: rgba(211, 211, 211, 0.565);
+          padding: 10px;
+          border: 1px solid gray;
+          min-height: 150px;
+          max-height: fit-content;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .uploadImage {
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            input {
+              display: none;
+            }
+          }
+        }
+      }
+      .imageList {
+        display: flex;
+        gap: 10px;
+        p {
+          color: red;
+        }
+        .images {
+          display: flex;
+          gap: 10px;
+          align-items: center;
+          .img {
+            position: relative;
+            display: flex;
+
+            &:hover {
+              .deleteimgbtn {
+                display: flex;
+              }
+            }
+
+            .deleteimgbtn {
+              border: none;
+              font-size: 25px;
+              padding: 3px;
+              color: black;
+              border-radius: 3px;
+              position: absolute;
+              bottom: 2px;
+              right: 2px;
+              display: none;
+              transition: 0.2s ease;
+
+              &:hover {
+                border: red;
+                background-color: red;
+                color: white;
+              }
+            }
+          }
+
+          .listedimage {
+            height: 100px;
+            width: 100px;
+            object-fit: cover;
+            border-radius: 3px;
+          }
+        }
+      }
+      button {
+        padding: 10px;
+        background-color: transparent;
+        border: 1.5px solid red;
+        color: red;
+        font-size: large;
+        transition: all 0.2s ease;
+
+        &:hover {
+          background-color: red;
+          color: white;
+          letter-spacing: 1.1px;
+        }
+      }
+    }
+  }
+}

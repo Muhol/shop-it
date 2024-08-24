@@ -1,0 +1,91 @@
+.filtercontainer {
+  background-color: var(--colpalb1);
+  height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+
+  .filtermenu {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: var(--backgr-1);
+    display: flex;
+    gap: 20px;
+    // height: calc(100vh - 100px);
+    
+    
+    .filterType {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      transition: all 0.2s;
+
+
+      &:hover{
+        li{
+          color: var(--second-color);
+        }
+
+        .filterlistbox{
+          opacity: 1;
+          z-index: 1;
+
+        }
+      }
+      li{
+        list-style: none;
+        transition: all 0.2s;
+
+      }
+      
+      .filterlistbox{
+        min-width: 200px;
+        position: absolute;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: 150px;
+        padding: 10px 20px;
+        width: max-content;
+        border-radius: 7px;
+        gap: 10px;
+        background-color: var(--backgr-2);
+        z-index: -1;
+        top: 25px;
+        opacity: 0;
+        color: white;
+        transition: all 0.3s;
+        
+        
+        .cartegoryItem {
+          gap: 10px;
+          display: flex;
+          align-items: center;
+          margin: 0 20px;
+          transition: all 0.2s;
+          &:hover{
+            color: var(--second-color);
+          }
+          label{
+            display: inline-block;
+            gap: 3px;
+            align-items: center;
+            position: relative;
+            cursor: pointer;
+
+            
+          
+          }
+
+          
+        }
+      }
+    }
+  }
+  main {
+    height: calc(100vh - 100px);
+    overflow-y: scroll;
+    display: flex;
+    flex-wrap: wrap;
+   
+  }
+}

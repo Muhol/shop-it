@@ -1,0 +1,104 @@
+.productsAdmin {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  overflow-y: hidden;
+  min-width: 400px;
+
+  .product {
+    flex: 1;
+    max-height: 200px;
+    background-color: var(--backgr-1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    justify-content: space-between;
+    margin-top: 5px;
+    gap: 10px;
+    // position: relative;
+    padding: 10px;
+
+    &:hover {
+      scale: 0.99;
+      box-shadow: var(--shadow);
+
+      .edit {
+        display: flex;
+      }
+    }
+
+    .productImage {
+      img {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+        border-radius: 5px;
+        mix-blend-mode: multiply;
+      }
+    }
+    .details {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 10px;
+
+      .left {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        .descrition{
+          max-width: 300px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        } 
+      }
+      .right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    .edit {
+      // background-color: red;
+      display: flex;
+      background-color: rgba(240, 239, 239, 0.336);
+      width: 90%;
+      align-items: center;
+      justify-content: end;
+      padding: 0 3px 3px 3px;
+
+      bottom: 0;
+      position: absolute;
+      display: none;
+      gap: 10px;
+
+      button {
+        padding: 5px;
+        background-color: transparent;
+        // border: 1px solid gray;
+        border: none;
+        border-radius: 3px;
+        font-size: larger;
+
+        &.editbtn {
+          &:hover {
+            background-color: green;
+            border: 1px solid green;
+            color: white;
+          }
+        }
+        &.deletebtn {
+          &:hover {
+            background-color: red;
+            border: 1px solid red;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}

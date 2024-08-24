@@ -1,0 +1,135 @@
+.productDetails {
+  display: flex;
+  background-color: var(--colpalb1);
+  
+  
+  .detailscontainer {
+    width: 100%;
+    min-height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    
+
+    .top {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding-top: 50px;
+      
+      .topwrapper{
+        display: flex;
+
+      .left {
+        // background-color: red;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        width: fit-content;
+        padding: 10px;
+
+        ::-webkit-scrollbar {
+          display: none;
+        }
+
+        .imglist {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          height: 510px;
+          overflow: scroll;
+          scroll-behavior: smooth;
+
+          .images {
+            width: 100px;
+            height: 100px;
+            background-color: rgba(211, 211, 211, 0.521);
+            img{
+              width: 100%;
+              height: 100%;
+              object-fit: contain;
+              mix-blend-mode: multiply;
+            }
+          }
+        }
+        .image{
+
+          background-color: rgba(211, 211, 211, 0.521);
+          width: 510px;
+          height: 510px;
+          img {
+            mix-blend-mode: multiply;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+      }
+      .right {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        // justify-content: space-between;
+        gap: 30px;
+        width: fit-content;
+        padding: 10px;
+
+        .details {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            max-width: 600px;
+          .brandName {
+            font-size: small;
+            font-weight: 500;
+          }
+          .productName {
+            font-weight: 500;
+            font-size: 27px;
+          }
+       
+          .prices {
+            display: flex;
+            gap: 20px;
+            .sellingPrice {
+              font-weight: 600;
+            }
+            .price {
+                text-decoration: line-through;
+            }
+          }
+        }
+        .btnscontainer {
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+          .btn {
+            padding: 10px 10px;
+            transition: all 0.3s;
+            font-weight: 600;
+            border: 2px solid var(--buttonb);
+            width: 290px;
+            // border: 1px solid red;
+            background-color: var(--buttonb);
+            color: var(--colpalb1);
+            font-size: 16px;
+
+            &:hover{
+                letter-spacing: .1em;
+                color: var(--buttonb);
+                background-color: var(--colpalb1);
+                width: 240px;
+            }
+          }
+        }
+      }
+    }
+
+    }
+    .bottom {
+      ::-webkit-scrollbar{
+        display: none;
+      }
+    }
+  }
+}

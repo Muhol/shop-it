@@ -1,0 +1,12 @@
+.searchPageCont {
+  display: flex;
+  flex-direction: column;
+  .searchContWrapper {
+    display: flex;
+    height: calc(100vh - 100px);
+    overflow-y: scroll;
+    width: 100%;
+    flex-wrap: wrap;
+    background-color: var(--colpalb1);
+  }
+}

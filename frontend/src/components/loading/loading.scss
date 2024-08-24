@@ -1,0 +1,45 @@
+.loading {
+  // position: absolute;
+  width: 100%;
+  height: calc(100vh - 120px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+  //   background-color: antiquewhite;
+//   font-size: 24px;
+
+  .load {
+    // background-color: antiquewhite;
+    background: content-box radial-gradient(rgba(255, 0, 0, 0.514),rgba(255, 0, 0, 0.329),rgba(255, 0, 0, 0.185),rgba(255, 0, 0, 0), transparent, transparent);
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all 1s ease;
+    animation-name: bounce;
+    animation: loading 1s round($number: 1000) linear;
+    animation-direction: alternate;
+    z-index: 0;
+    p{
+        z-index: 1;
+    }
+  }
+}
+@keyframes loading {
+  from {
+    // background: radial-gradient(to center, transparent, red);
+    // background: radial-gradient(crimson, transparent, transparent);
+    opacity: 0;
+
+  }
+  to {
+    // background: radial-gradient( transparent, red);
+    // background-color: rgba(255, 0, 0, 0.37);
+    // backdrop-filter: blur(10px);
+    opacity: 1;
+    letter-spacing: 1px;
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "user1": 
+  {
+    "username": "samuel",
+    "email": "samuel@gmail.com",
+    "password": "12345"
+  },
+  "user2": 
+  {
+    "username": "ian",
+    "email": "ian@gmail.com",
+    "password": "123"
+  },
+  "user3": 
+  {
+    "username": "muhol",
+    "email": "muhol@gmail.com",
+    "password": "34467"
+  },
+  "user1login": 
+  {
+    "email": "samuel@gmail.com",
+    "password": "12345"
+  },
+  "user2login": 
+  {
+    "email": "ian@gmail.com",
+    "password": "123"
+  },
+  "user3login": 
+  {
+    "email": "muhol@gmail.com",
+    "password": "34467"
+  }
+}

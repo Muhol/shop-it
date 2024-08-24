@@ -1,0 +1,66 @@
+.usertableheaders{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    // background-color: antiquewhite;
+
+
+    .common{
+        // padding: 10px 30px 10px 10px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 70px;
+        // background-color: antiquewhite;
+        padding-left: 10px;
+        border-bottom: 1px solid rgb(189, 187, 187);
+
+    }
+    .profilepic{
+        width: 10%;
+        background-color: rgba(128, 128, 128, 0.712);
+        // justify-content: center;
+        // padding-left: 40px;
+        display: flex;
+        justify-content: center;
+        
+        img{
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 100px;
+        }
+    }
+    .username{
+        width: 20%;
+        background-color: rgba(128, 128, 128, 0.76);
+        // background-color: rgb(224, 224, 224);
+        
+    }
+    .email{
+        width: 30%;
+        background-color: rgba(128, 128, 128, 0.685);
+        // flex: 1;
+        // background-color: rgb(71, 179, 143);
+    }
+    .role{
+        width: 15%;
+        // flex: 1;
+        background-color: rgb(140, 141, 141);
+    }
+    .datecreated{
+        width: 15%;
+        background-color: rgba(173, 171, 171, 0.719);
+        // flex: 2;
+        // background-color: rgb(240, 243, 242);
+        
+    }
+    .action{
+        width: 10%;
+        // flex: 2;
+        background-color: rgb(182, 184, 183);
+        display: flex;
+            justify-content: center;
+        
+    }
+}

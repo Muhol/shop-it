@@ -1,0 +1,153 @@
+.main{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--fontc1);
+    align-items: center;
+    justify-content: center;
+
+
+    .signupcontainer{
+        width: 550px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 1px 1px 20px var(--shadow);
+        gap: 25px;
+        padding: 20px 50px;
+        background-color: var(--colpalb1);
+
+        .signuplogo{
+            display: flex;
+
+            .image{
+                // border: 2px solid;
+                border-radius: 50%;
+                width: 200px;
+                height: 200px;
+                position: relative;
+                transition:all 0.7s ease;
+                
+                img{
+                    border-radius: 50%;
+                    width: 200px;
+                    height: 200px;
+                    object-fit: cover;
+                    mix-blend-mode: multiply;
+                }
+                .imageupload{
+                    // background: linear-gradient(to top,rgba(255, 0, 0, 0.795), transparent, transparent) ;
+                    display: flex;
+                    justify-content: center;
+                    height: 100%;
+                    width: 100%;
+                    position: absolute;
+                    bottom: 0;
+                    border-radius: 96px;
+                    transition:  0.5s;
+                    backdrop-filter: blur(10px) saturate(140%);
+                    opacity: 0;
+
+                    &:hover{
+                        opacity: 1;
+                    }
+                    form{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        // label{
+
+                        // }
+                        input{
+                            display: none;
+                        }
+                    }
+                }
+                // &:hover{
+                //     .imageupload{
+                //        animation: fade-in linear;
+                //     }
+                // }
+            }
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            width: 100%;
+
+            .info{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+
+                // label{
+    
+                // }
+                .input{
+                    width: 100%;
+                    background-color: transparent;
+                    border: 1px solid var(--buttonb);
+                    display: flex;
+                    align-items: center;
+
+                    input{
+                        // width: 100;
+                        background-color: transparent;
+                        flex: 1;
+                        padding: 10px;
+                        outline: none;
+                        border: none;
+                    }
+                    .showicon{
+                        width: 35px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        cursor: pointer;
+                    }
+                }
+            }
+            button{
+                padding: 10px;
+                background-color: transparent;
+                border: 1px solid var(--buttonb);
+                outline: none;
+                color: var(--buttonb);
+                font-weight: 500;
+                font-size: 18px;
+                transition: all 0.2s linear;
+                cursor: pointer;
+
+                &:hover{
+                    letter-spacing: 0.2em;
+                    color: var(--colpalb1);
+                    background-color: var(--buttonb);
+                  }
+            }
+        }
+        .login{
+            p{
+                a{
+                    text-decoration: none;
+                    color: blue;
+                    cursor: pointer;
+
+                    &:hover{
+                        color:red;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

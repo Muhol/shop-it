@@ -1,0 +1,35 @@
+.fullScreenImage {
+  color: white;
+  font-size: large;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.295);
+  z-index: 1;
+
+  .fullimage {
+    width: 80%;
+    height: 95%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    .close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+    .image {
+      width: 600px;
+      height: 600px;
+      object-fit: cover;
+    //   background-color: red;
+    }
+  }
+}

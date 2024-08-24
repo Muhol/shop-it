@@ -1,0 +1,42 @@
+.allProductsContainer {
+  width: 100%;
+  height: calc(100vh - 100px);
+  overflow-y: scroll;
+  // background-color: antiquewhite;
+
+  .header {
+    background-color: var(--backgr-1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 20px 0;
+
+    // .left{
+    // }
+    .right {
+      .uploadButton {
+        color: var(--backgr-2);
+        font-size: large;
+        font-weight: 600;
+        padding: 6px 30px;
+        background-color: transparent;
+        border: 2px solid var(--backgr-2);
+        transition: 0.2s ease;
+
+        &:hover {
+          background-color: var(--backgr-2);
+          color: var(--second-color);
+          letter-spacing: 0.2rem;
+        }
+      }
+    }
+  }
+  .productlist{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}

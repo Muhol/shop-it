@@ -16,13 +16,14 @@ app.use(express.urlencoded({ limit: '50mb', extended: true }));
 app.use(cookieParser())
 app.use("/api", router)
 
+connectDB();
 
-
-const PORT = process.env.PORT
-
-connectDB().then(() => { 
-    app.listen(PORT,()=> {
-        console.log(`server is running on port ${PORT}`)
+if (process.env.NODE_ENV !== "production"){
+    const PORT = process.env.PORT
+    connectDB().then(() => { 
+        app.listen(PORT,()=> {
+            console.log(`server is running on port ${PORT}`)
+        })
     })
-})
+}
 

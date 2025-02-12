@@ -76,7 +76,6 @@ const webhook = async(req, res) => {
         userId: session.metadata.userId,
         items: ProductDetails,
         totalAmount: session.amount_total/100,
-        // delivery: "Pending",
         paymentMethod: session.payment_method_types[0],
         shippingAddress: session.shipping_details.address,
         name: session.shipping_details.name

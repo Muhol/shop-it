@@ -113,7 +113,6 @@ function App() {
 
   const user = useSelector((state) => state.user?.user);
 
-  // console.log(user)
   //FETCH USER DETAILS
   const fetchUserDetails = async () => {
     const dataResponse = await fetch(summaryApi.currentUser.url, {
@@ -127,7 +126,7 @@ function App() {
     }
 
     if (dataApi.error) {
-      window.alert(`${dataApi.message}`)
+      // window.alert(`${dataApi.message}`)
     }
 
   };

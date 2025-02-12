@@ -3,7 +3,7 @@ import productModel from "../../models/productModel.mjs";
 const filterByCartegories = async (req, res) => {
   try {
     const query = req.query.q;
-    const cartegories = query.split(",");
+    const cartegories = query?.split(",");
 
 
     if (query === "") {

@@ -10,6 +10,7 @@ const Orders = () => {
   const sortedData = [...data].sort(
     (a, b) => new Date(b.createdAt) - new Date(a.createdAt)
   );
+  console.log(data[0]?.items)
 
   //fetch user orders
   const fetchOrders = async () => {
@@ -54,7 +55,7 @@ const Orders = () => {
               {order?.items?.map((item) => {
                 return (
                   <div className="orderItem" key={item._id}>
-                    <img src={item.productId.productImage[0]} alt="" />
+                    {/* <img src={item?.productId?.productImage[0]} alt="" /> */}
                     <div className="itemdetails">
                       <div className="top">
                         <p className="productname"> {item.name}</p>

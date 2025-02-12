@@ -1,5 +1,4 @@
-// const url = `https://api.cloudinary.com/v1_1/${process.env.REACR_APP_IMAGE_UPLOAD_CLOUDINARY}/image/upload`
-const url = `https://api.cloudinary.com/v1_1/dn5f0jksu/image/upload`
+const url = `${import.meta.env.CLOUDINARY_URL}`
 
 const imageUpload = async(image) => {
     const formData = new FormData()

@@ -18,6 +18,7 @@ function Home() {
       if (response.success) {
         toast.success(response.message);
         setProducts(response.data);
+        // console.log(response.data)
       }
 
       if (response.error) {

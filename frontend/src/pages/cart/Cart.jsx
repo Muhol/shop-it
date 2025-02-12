@@ -122,7 +122,7 @@ function Cart() {
         } catch (error) {
         window.alert(`${error.message}`);
         } finally {
-          // clearCart()
+          clearCart()
         }
       }
     } catch (error) {

@@ -44,19 +44,18 @@ export const AddProduct = ({ close, fetchAllProducts }) => {
   const handleUploadProduct = async (e) => {
     try {
       const image = e.target.files[0];
-  
+      // console.log("image")
       const uploadImageCloudinary = await imageUpload(image);
-  
       setProductDetails((prev) => {
         return {
           ...prev,
           productImage: [...prev.productImage, uploadImageCloudinary.url],
         };
       });
-      console.log("upload image", productDetails.productImage);
-      
+      // console.log("upload image", productDetails.productImage);
     } catch (error) {
       toast.error("message", error.message)
+      console.log(error)
     }
   };
 

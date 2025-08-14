@@ -8,6 +8,7 @@
 
   h2 {
     text-transform: capitalize;
+    margin-left: 20px;
   }
   &:hover {
     .btns {
@@ -89,10 +90,11 @@
         transition: all 0.2s;
         color: var(--colpalb1);
         background-color: var(--buttonb);
+        border-radius: 3px;
         
         &:hover {
-          letter-spacing: 0.2em;
-          border: 1px solid var(--buttonb);
+          letter-spacing: 0.09rem;
+          border: 2px solid var(--buttonb);
           color: var(--buttonb);
           background-color: transparent;
         }

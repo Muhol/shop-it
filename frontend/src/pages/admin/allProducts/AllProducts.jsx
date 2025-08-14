@@ -26,13 +26,13 @@ function AllProducts() {
     setData(response?.data);
 
     if (response.success) {
-      toast.success(response.message);
+      // toast.success(response.message);
       // console.log("products", response.data);
       const products = response.data;
       // console.log("products", products)
       setData(products);
 
-      console.log(data);
+      // console.log(data);
     }
     if (response.error) {
       toast.error(response.message);

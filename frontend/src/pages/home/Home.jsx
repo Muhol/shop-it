@@ -16,7 +16,7 @@ function Home() {
       const response = await fetchApi.json();
 
       if (response.success) {
-        toast.success(response.message);
+        // toast.success(response.message);
         setProducts(response.data);
         // console.log(response.data)
       }
@@ -40,9 +40,9 @@ function Home() {
       const response = await fetchData.json();
 
       if (response.success) {
-        toast.success(response.message);
+        // toast.success(response.message);
         setGroupedProducts(response.data);
-        console.log(groupedProducts);
+        // console.log(groupedProducts);
       }
     } catch (error) {
       console.log("error", error.message);

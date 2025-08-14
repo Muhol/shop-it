@@ -16,7 +16,7 @@ function CartegoryList() {
       const response = await fetchApi.json();
 
       if (response.success) {
-        toast.success(response.message);
+        // toast.success(response.message);
         setCartegories(response.data);
       }
       if (response.error) {
@@ -24,7 +24,7 @@ function CartegoryList() {
         console.log("cartegories", response.data);
       }
     } catch (error) {
-      console.log("error", error.message);
+      // console.log("error", error.message);
     } finally {
       setLoading(false);
     }
@@ -39,8 +39,8 @@ function CartegoryList() {
   const cleanQuery = query?.split("=");
   const fstCartegory = cleanQuery[1];
   const finalCartegory = fstCartegory?.split(",");
-  console.log(location)
-  console.log(fstCartegory)
+  // console.log(location)
+  // console.log(fstCartegory)
 
 
   const handleFilter = async(e, cartegory) => {
@@ -74,7 +74,7 @@ function CartegoryList() {
   
 //API CALL
 const [data, setData] = useState(null);
-console.log(data)
+// console.log(data)
 
   const fetchFilteredProducts = async () => {
     try {

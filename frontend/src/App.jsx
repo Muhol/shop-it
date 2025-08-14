@@ -78,7 +78,6 @@ const router = createBrowserRouter([
         path: "orders",
         element: <Orders />,
       },
-     
       {
         path: "admin",
         element: <AdminPanel />,
@@ -145,7 +144,6 @@ function App() {
 
       if (response.success) {
         setCart(response.data[0]);
-      
       }
     } catch (error) {
       window.alert(`${error.message}`)

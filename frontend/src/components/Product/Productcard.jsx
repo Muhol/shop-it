@@ -13,13 +13,13 @@ function Productcard({ product }) {
 //CART FUNCTIONALITY
   const handleAddToCart = async(e, id) => {
     e.preventDefault()
-     console.log(id)
-     const quantity = 1
+    console.log(id)
+    const quantity = 1
 
-     const payload = {
-      productId: id,
-      quantity: quantity
-     }
+    const payload = {
+    productId: id,
+    quantity: quantity
+    }
 
     try {
       const fetchApi = await fetch(summaryApi.addToCart.url,{
@@ -56,7 +56,7 @@ function Productcard({ product }) {
           <span>53%</span>
         </div> */}
         <img src={product?.productImage[0]} alt="" />
-        <div className="productdetails">
+        <div className="productdetails"  title={product?.description}>
           <div className="top">
             <p className="productname">
               <b>{product?.productName}</b>

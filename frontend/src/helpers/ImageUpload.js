@@ -1,6 +1,7 @@
-const url = `${import.meta.env.CLOUDINARY_URL}`
+const url = `${import.meta.env.VITE_CLOUDINARY_URL}`
 
 const imageUpload = async(image) => {
+    // console.log(url)
     const formData = new FormData()
     formData.append("file", image)
     formData.append("upload_preset","iwdo5tqn")

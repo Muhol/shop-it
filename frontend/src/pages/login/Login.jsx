@@ -95,7 +95,7 @@ function Login() {
             </div>
             <div className="passwordreset">
               <Link to="/password-reset">
-                <p>Forgot Password</p>
+                <p>Forgot Password?</p>
               </Link>
             </div>
           </div>

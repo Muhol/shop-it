@@ -3,12 +3,13 @@
   width: 100%;
   flex-direction: column;
   position: relative;
+  align-items: center;
   background-color: var(--colpalb1);
   padding-bottom: 100px;
   border-bottom: 1px solid #beac9d;
   .productscontainer {
     padding: 7px 20px;
-    max-width: 100%;
+    max-width: 1400px;
     background-color: var(--colpalb1);
 
     .toptrack {

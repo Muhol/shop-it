@@ -12,7 +12,7 @@ function Allproducts() {
       const response = await fetchApi.json();
 
       if (response.success) {
-        toast.success(response.message);
+        // toast.success(response.message);
         setProducts(response.data);
       }
 

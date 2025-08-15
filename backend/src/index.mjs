@@ -19,7 +19,7 @@ app.use("/api", router)
 connectDB();
 
 if (process.env.NODE_ENV !== "production"){
-    const PORT = process.env.PORT
+    const PORT = process.env.PORT || 8080
     connectDB().then(() => { 
         app.listen(PORT,()=> {
             console.log(`server is running on port ${PORT}`)

@@ -1,4 +1,4 @@
- 
+
 const userLogoutController = async(req, res) => {
     try {
         res.clearCookie("token")
